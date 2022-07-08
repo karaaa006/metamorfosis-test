@@ -1,5 +1,5 @@
-const { src, dest, watch, parallel, series, task } = require("gulp");
-const ghPages = require("gulp-gh-pages");
+const { src, dest, watch, parallel, series } = require("gulp");
+const urlAdjuster = require("gulp-css-url-adjuster");
 
 let sсss = require("gulp-sass")(require("sass")),
   concat = require("gulp-concat"),
@@ -7,10 +7,6 @@ let sсss = require("gulp-sass")(require("sass")),
   uglify = require("gulp-uglify-es").default,
   autopref = require("gulp-autoprefixer"),
   del = require("del");
-
-gulp.task("deploy", function () {
-  return gulp.src("./dist/**/*").pipe(ghPages());
-});
 
 function browsersync() {
   browserSync.init({
@@ -36,6 +32,11 @@ function styles() {
   return src(["src/scss/main.scss"])
     .pipe(sсss({ outputStyle: "compressed" }))
     .pipe(concat("style.min.css"))
+    .pipe(
+      urlAdjuster({
+        replace: ["../../", "../"],
+      })
+    )
     .pipe(
       autopref({
         overrideBrowserslist: ["last 10 version"],
