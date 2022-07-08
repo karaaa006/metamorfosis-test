@@ -1,0 +1,762 @@
+<!DOCTYPE html>
+<html leng="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Testing</title>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="css/style.min.css" />
+  </head>
+  <body>
+    <section class="section hero">
+      <div class="hero__illustration-circle">
+        <img src="./images/decor/circle.svg" alt="circle" />
+      </div>
+      <div class="hero__illustration-bagel">
+        <img src="./images/decor/bagel.svg" alt="circle" />
+      </div>
+
+      <div class="container">
+        <header class="hero__top-wrap">
+          <a class="hero__logo-link" href="/">
+            <img class="hero__logo" src="./images/logo.svg" alt="Logo" />
+          </a>
+
+          <nav class="hero__nav">
+            <ul class="hero__nav-list">
+              <li class="hero__nav-item">
+                <a href="#" class="hero__nav-link">Home</a>
+              </li>
+              <li class="hero__nav-item">
+                <a href="#" class="hero__nav-link">Our Pertners</a>
+              </li>
+              <li class="hero__nav-item">
+                <a href="#" class="hero__nav-link">Our Team</a>
+              </li>
+              <li class="hero__nav-item">
+                <a href="#" class="hero__nav-link hero__nav-link--underline"
+                  >Contact Us</a
+                >
+              </li>
+            </ul>
+          </nav>
+
+          <button class="hero__menu-btn" id="open-menu">
+            <img
+              src="./images/icons/burger.svg"
+              alt="menu icon"
+              class="hero__menu-icon"
+            />
+          </button>
+
+          <div class="hero__mobile-menu">
+            <div class="hero__mobile-menu-top-wrap">
+              <a class="hero__logo-link" href="/">
+                <img class="hero__logo" src="./images/logo.svg" alt="Logo" />
+              </a>
+
+              <button class="hero__menu-btn" id="close-menu">
+                <img
+                  src="./images/icons/close.svg"
+                  alt="menu icon"
+                  class="hero__menu-icon"
+                />
+              </button>
+            </div>
+            <nav class="hero__mobile-nav">
+              <ul class="hero__menu-list">
+                <li class="hero__menu-item">
+                  <a href="#" class="hero__menu-link">Home</a>
+                </li>
+                <li class="hero__menu-item">
+                  <a href="#" class="hero__menu-link">Our Pertners</a>
+                </li>
+                <li class="hero__menu-item">
+                  <a href="#" class="hero__menu-link">Our Team</a>
+                </li>
+                <li class="hero__menu-item">
+                  <a href="#" class="hero__menu-link hero__menu-link--underline"
+                    >Contact Us</a
+                  >
+                </li>
+              </ul>
+            </nav>
+            <div class="hero__mobile-menu-social">
+              <ul class="hero__mobile-menu-social-list">
+                <li class="hero__mobile-menu-social-item">
+                  <a href="#" class="hero__mobile-menu-social-link"
+                    ><img
+                      src="./images/icons/fb-white.svg"
+                      alt="Facebook icon"
+                      class="hero__mobile-menu-social-icon"
+                  /></a>
+                </li>
+                <li class="hero__mobile-menu-social-item">
+                  <a href="#" class="hero__mobile-menu-social-link"
+                    ><img
+                      src="./images/icons/tw-white.svg"
+                      alt="Twitter icon"
+                      class="hero__mobile-menu-social-icon"
+                  /></a>
+                </li>
+                <li class="hero__mobile-menu-social-item">
+                  <a href="#" class="hero__mobile-menu-social-link"
+                    ><img
+                      src="./images/icons/in-white.svg"
+                      alt="Linkedin icon"
+                      class="hero__mobile-menu-social-icon"
+                  /></a>
+                </li>
+                <li class="hero__mobile-menu-social-item">
+                  <a href="#" class="hero__mobile-menu-social-link"
+                    ><img
+                      src="./images/icons/ig-white.svg"
+                      alt="Instagram icon"
+                      class="hero__mobile-menu-social-icon"
+                  /></a>
+                </li>
+              </ul>
+              <a href="#" class="hero__mobile-menu-policy">Privacy Policy</a>
+            </div>
+          </div>
+        </header>
+        <div class="hero__content">
+          <h1 class="hero__content-title">
+            Email marceting for fast-growing startups
+          </h1>
+          <p class="hero__content-text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Id ut
+            cursus dictum purus enim in in urna, suspendisse. Mauris, mollis sed
+            sed ac.
+          </p>
+          <div class="hero__btns-wrap">
+            <button class="btn hero__btn">Start Now</button>
+            <button class="btn btn--outline hero__btn">Read More</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section partners">
+      <div class="container">
+        <h2 class="section__title">Our Partners</h2>
+
+        <div class="partners__tabs">
+          <div class="partners__info">
+            <div class="partners__user-info">
+              <img
+                src="./images/partners/tom-dou.png"
+                alt="Tom Dou photo"
+                class="partners__user-photo"
+              />
+              <div class="partners__user-wrap">
+                <div class="partners__user-name">Tom Dou</div>
+                <div class="partners__user-position">Front-End</div>
+              </div>
+            </div>
+            <div class="partners__text">
+              “Lorem ipsum dolor sit amet, consectetur adipiscing elit. At
+              pretium id viverra interdum nam odio ultricies. Diam leo, sed
+              neque dui pulvinar condimentum pretium. At pretium id viverra
+              interdum nam odio ultricies. Diam leo, sed neque dui pulvinar
+              condimentum pretium.”
+            </div>
+          </div>
+
+          <ul class="partners__card-list">
+            <li class="partners__card">
+              <input
+                class="partners__radio"
+                type="radio"
+                name="selected-card"
+                data-name="Tom Dou"
+                data-position="Front-End"
+                data-text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. At pretium id viverra interdum nam odio ultricies. Diam leo, sed neque dui pulvinar condimentum pretium. At pretium id viverra interdum nam odio ultricies. Diam leo, sed neque dui pulvinar condimentum pretium."
+                checked
+              />
+              <img
+                src="./images/partners/partner-1.png"
+                alt="stj partners"
+                class="partners__logo"
+              />
+            </li>
+            <li class="partners__card">
+              <input
+                class="partners__radio"
+                type="radio"
+                name="selected-card"
+                data-name="breck partners"
+                data-position="Back-End"
+                data-text="Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old."
+              />
+              <img
+                src="./images/partners/partner-2.png"
+                alt="breck partners"
+                class="partners__logo"
+              />
+            </li>
+            <li class="partners__card">
+              <input
+                class="partners__radio"
+                type="radio"
+                name="selected-card"
+                data-name="sunset partners"
+                data-position="Front-End"
+                data-text="Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of
+            'de Finibus Bonorum et Malorum'(The Extremes of Good and Evil) by
+            Cicero, written in 45 BC. This book is a treatise on the theory of
+            ethics, very popular during the Renaissance. The first line of Lorem
+            Ipsum, 'Lorem ipsum dolor sit amet..', comes from a line in section
+            1.10.32."
+              />
+              <img
+                src="./images/partners/partner-3.png"
+                alt="sunset partners"
+                class="partners__logo"
+              />
+            </li>
+            <li class="partners__card">
+              <input
+                class="partners__radio"
+                type="radio"
+                name="selected-card"
+                data-name="athena consultants"
+                data-position="UX/UI"
+                data-text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec enim enim, facilisis non eleifend finibus, imperdiet sit amet magna. Aenean ultrices ipsum vitae arcu dictum, nec suscipit nulla ultricies."
+              />
+              <img
+                src="./images/partners/partner-4.png"
+                alt="athena consultants"
+                class="partners__logo"
+              />
+            </li>
+            <li class="partners__card">
+              <input
+                class="partners__radio"
+                type="radio"
+                name="selected-card"
+                data-name="the chord company"
+                data-position="Back-End"
+                data-text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. At pretium id viverra interdum nam odio ultricies. Diam leo, sed neque dui pulvinar condimentum pretium. At pretium id viverra interdum nam odio ultricies. Diam leo, sed neque dui pulvinar condimentum pretium."
+              />
+              <img
+                src="./images/partners/partner-5.png"
+                alt="the chord company"
+                class="partners__logo"
+              />
+            </li>
+            <li class="partners__card">
+              <input
+                class="partners__radio"
+                type="radio"
+                name="selected-card"
+                data-name="freshly"
+                data-position="PM"
+                data-text="Vestibulum quis elementum turpis. Mauris sagittis non leo vel lobortis. Donec tincidunt urna odio, quis suscipit leo venenatis id. Phasellus blandit mi et nunc porttitor, vitae ullamcorper nunc tristique. Nullam imperdiet magna et ligula vehicula cursus. Praesent odio mauris, aliquam pharetra tincidunt eu, gravida et dui. Etiam porta metus nibh, eget dictum ligula euismod ac."
+                value="freshly"
+              />
+              <img
+                src="./images/partners/partner-6.png"
+                alt="freshly"
+                class="partners__logo"
+              />
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section team">
+      <div class="team__right-illustration">
+        <img
+          src="./images/decor/team-cross-illustration.svg"
+          alt="Illustration"
+        />
+      </div>
+      <div class="team__left-illustration">
+        <img
+          src="./images/decor/team-cross-illustration.svg"
+          alt="Illustration"
+        />
+      </div>
+
+      <div class="container">
+        <h2 class="section__title">Our Team</h2>
+        <div class="team__info-wrap">
+          <div class="team__info">
+            <h3 class="team__subtitle">About</h3>
+            <p class="team__text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
+              nullam ac sed eget. Dui in eget a tristique. Curabitur massa nec
+              non egestas nisl. Fusce nullam ac sed eget. Dui in eget a
+              tristique.
+            </p>
+          </div>
+          <div class="team__slider">
+            <div class="team__slider-btn-list">
+              <div class="team__slide-btn">
+                <label class="team-slide-label">
+                  <input
+                    class="team__slide-radio"
+                    type="radio"
+                    id="slide-2"
+                    name="current-slide"
+                    checked
+                  />
+                  <div class="team__label-text">
+                    <div class="team__custom-radio"></div>
+                    Team 1
+                  </div>
+                </label>
+              </div>
+              <div class="team__slide-btn">
+                <label class="team-slide-label">
+                  <input
+                    class="team__slide-radio"
+                    type="radio"
+                    id="slide-2"
+                    name="current-slide"
+                  />
+                  <div class="team__label-text">
+                    <div class="team__custom-radio"></div>
+                    Team 2
+                  </div>
+                </label>
+              </div>
+              <div class="team__slide-btn">
+                <label class="team-slide-label">
+                  <input
+                    class="team__slide-radio"
+                    type="radio"
+                    id="slide-2"
+                    name="current-slide"
+                  />
+                  <div class="team__label-text">
+                    <div class="team__custom-radio"></div>
+                    Team 3
+                  </div>
+                </label>
+              </div>
+            </div>
+            <div class="swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img
+                    src="./images/teammates/1.jpg"
+                    alt="Teammate"
+                    class="teammate__photo"
+                  />
+                  <div class="teamate__overlay">
+                    <div class="teammate__name">Tom Dou</div>
+                    <div class="teammate__position">Front-End</div>
+                    <button
+                      class="btn teammate__btn"
+                      data-name="Tom Dou"
+                      data-position="Front-End"
+                      data-text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce nullam ac sed eget. Dui in eget a tristique. Curabitur massa nec non egestas nisl. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dui in eget a tristique. Curabitur massa nec non egestas nisl. Lorem ipsum dolor sit amet, consectetur adipiscing elit. "
+                      data-phone="+3125789075"
+                      data-photo="https://s3-alpha-sig.figma.com/img/0498/a5c5/b76572669caba64d91bceb6179ee5971?Expires=1658102400&Signature=FYXgLtlhAwqkYgsnEAXuK-3gFDtTDnpm7PeI2jyuNaJwlTHMI3wmp2WPBnW5dyPc9WcjqV~k~7zseAnCaEH9AW6tS8RiKUmOocEDKHc9D7XCNfJQE~lzG8WsQ6bRDIrd9m0cwxuYuZgX9yeEFpcIbWvmjv7RWbJ5bfzqPMbQBKsdiEaoOELPhplHuDcNOTKhC9tussH4m5LoFMH1bdIlPTnie1dERkAfDd52Adj7qkjUPqdnGvZREoOmz9mGFyp2hoKHIMWO38DJozar-LkNZH9cg~~nIkHUnrjcsLj42ymVpukdtNyqngqkh3HaoNp~wUxps-KawvbUbKQ~i-Xl4g__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA"
+                      data-email="username@mail.com"
+                    >
+                      Read More
+                    </button>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="./images/teammates/2.jpg"
+                    alt="Teammate"
+                    class="teammate__photo"
+                  />
+                  <div class="teamate__overlay">
+                    <div class="teammate__name">John Beer</div>
+                    <div class="teammate__position">Back-End</div>
+                    <button
+                      class="btn teammate__btn"
+                      data-name="John Beer"
+                      data-position="Back-End"
+                      data-text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce nullam ac sed eget. Dui in eget a tristique. Curabitur massa nec non egestas nisl. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dui in eget a tristique. Curabitur massa nec non egestas nisl. Lorem ipsum dolor sit amet, consectetur adipiscing elit. "
+                      data-phone="+996565854"
+                      data-photo="https://www.figma.com/file/56A5zRiV7DDdbZcUmOBe0o/image/b6e1ef49674b003dfb2776281be0d198b8212197?fuid=951553027690533501"
+                      data-email="username2@mail.com"
+                    >
+                      Read More
+                    </button>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="./images/teammates/3.jpg"
+                    alt="Teammate"
+                    class="teammate__photo"
+                  />
+                  <div class="teamate__overlay">
+                    <div class="teammate__name">Tom Dou</div>
+                    <div class="teammate__position">Front-End</div>
+                    <button
+                      class="btn teammate__btn"
+                      data-name="Tom Dou"
+                      data-position="Front-End"
+                      data-text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce nullam ac sed eget. Dui in eget a tristique. Curabitur massa nec non egestas nisl. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dui in eget a tristique. Curabitur massa nec non egestas nisl. Lorem ipsum dolor sit amet, consectetur adipiscing elit. "
+                      data-phone="+3125789075"
+                      data-photo="https://s3-alpha-sig.figma.com/img/0498/a5c5/b76572669caba64d91bceb6179ee5971?Expires=1658102400&Signature=FYXgLtlhAwqkYgsnEAXuK-3gFDtTDnpm7PeI2jyuNaJwlTHMI3wmp2WPBnW5dyPc9WcjqV~k~7zseAnCaEH9AW6tS8RiKUmOocEDKHc9D7XCNfJQE~lzG8WsQ6bRDIrd9m0cwxuYuZgX9yeEFpcIbWvmjv7RWbJ5bfzqPMbQBKsdiEaoOELPhplHuDcNOTKhC9tussH4m5LoFMH1bdIlPTnie1dERkAfDd52Adj7qkjUPqdnGvZREoOmz9mGFyp2hoKHIMWO38DJozar-LkNZH9cg~~nIkHUnrjcsLj42ymVpukdtNyqngqkh3HaoNp~wUxps-KawvbUbKQ~i-Xl4g__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA"
+                      data-email="username@mail.com"
+                    >
+                      Read More
+                    </button>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="./images/teammates/4.jpg"
+                    alt="Teammate"
+                    class="teammate__photo"
+                  />
+                  <div class="teamate__overlay">
+                    <div class="teammate__name">Tom Dou</div>
+                    <div class="teammate__position">Front-End</div>
+                    <button
+                      class="btn teammate__btn"
+                      data-name="Tom Dou"
+                      data-position="Front-End"
+                      data-text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce nullam ac sed eget. Dui in eget a tristique. Curabitur massa nec non egestas nisl. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dui in eget a tristique. Curabitur massa nec non egestas nisl. Lorem ipsum dolor sit amet, consectetur adipiscing elit. "
+                      data-phone="+3125789075"
+                      data-photo="https://s3-alpha-sig.figma.com/img/0498/a5c5/b76572669caba64d91bceb6179ee5971?Expires=1658102400&Signature=FYXgLtlhAwqkYgsnEAXuK-3gFDtTDnpm7PeI2jyuNaJwlTHMI3wmp2WPBnW5dyPc9WcjqV~k~7zseAnCaEH9AW6tS8RiKUmOocEDKHc9D7XCNfJQE~lzG8WsQ6bRDIrd9m0cwxuYuZgX9yeEFpcIbWvmjv7RWbJ5bfzqPMbQBKsdiEaoOELPhplHuDcNOTKhC9tussH4m5LoFMH1bdIlPTnie1dERkAfDd52Adj7qkjUPqdnGvZREoOmz9mGFyp2hoKHIMWO38DJozar-LkNZH9cg~~nIkHUnrjcsLj42ymVpukdtNyqngqkh3HaoNp~wUxps-KawvbUbKQ~i-Xl4g__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA"
+                      data-email="username@mail.com"
+                    >
+                      Read More
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-navigation">
+                <div class="swiper-scrollbar"></div>
+                <div class="swiper-button swiper-button-prev"></div>
+                <div class="swiper-button swiper-button-next"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact">
+      <div class="container">
+        <h2 class="section__title">Contact Us</h2>
+
+        <form class="contact__form">
+          <div class="contact__inputs-wrap">
+            <input
+              class="contact__input"
+              type="text"
+              name="name"
+              placeholder="Your Name"
+            />
+            <input
+              class="contact__input"
+              type="email"
+              name="email"
+              placeholder="Email Address"
+            />
+            <input
+              class="contact__input"
+              type="text"
+              name="phone"
+              placeholder="Phone Number"
+            />
+            <select class="contact__select" name="contact__select">
+              <option value="1">Choose your job type</option>
+              <option value="1">Front-end</option>
+              <option value="2">Back-end</option>
+              <option value="3">UX/UI Design</option>
+              <option value="4">Mobile Development</option>
+            </select>
+            <textarea
+              class="contact__textarea"
+              name="Message"
+              placeholder="Message"
+            ></textarea>
+          </div>
+
+          <div class="contact__upload-btn-wrap">
+            <label class="contact__file-upload-wrap">
+              <input class="contact__file-upload" type="file" name="cv" />
+              <img
+                src="./images/icons/upload.svg"
+                alt="Upload icon"
+                class="contact__file-upload-icon"
+              />
+              <div class="contact__file-upload-text">Upload your CV</div>
+            </label>
+
+            <button class="btn btn--dark contact__btn" type="submit">
+              Submit
+            </button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <footer class="section footer">
+      <div class="container">
+        <h2 class="section__title section__title--invert">
+          Where You Can Find Us?
+        </h2>
+        <div class="footer__wrap">
+          <div class="footer__office-item">
+            <h3 class="footer__office-title">Office 1</h3>
+            <ul class="footer__office-contact-list">
+              <li class="footer__office-contact-item">
+                <img
+                  src="./images/icons/map-mark.svg"
+                  alt="map mark icon"
+                  class="footer__office-contact-icon"
+                />
+                <a
+                  href="https://www.google.com/maps/place/Pae+47-25,+11414+Tallinn,+%D0%95%D1%81%D1%82%D0%BE%D0%BD%D1%96%D1%8F/data=!4m2!3m1!1s0x4692ecaddfccdef9:0x16111e88f5b21088?sa=X&ved=2ahUKEwiZ6t6f8Of4AhVASfEDHXZnBD4Q8gF6BAgIEAE"
+                  class="footer__office-contact-link"
+                >
+                  Lasnamae linnaosa, Pae tn 25-47
+                </a>
+              </li>
+              <li class="footer__office-contact-item">
+                <img
+                  src="./images/icons/mail.svg"
+                  alt="mail icon"
+                  class="footer__office-contact-icon"
+                />
+                <a
+                  href="mailto:username@mail.com"
+                  class="footer__office-contact-link"
+                >
+                  username@mail.com
+                </a>
+              </li>
+              <li class="footer__office-contact-item">
+                <img
+                  src="./images/icons/phone.svg"
+                  alt="phone icon"
+                  class="footer__office-contact-icon"
+                />
+                <a href="tel:+3125789075" class="footer__office-contact-link">
+                  +3125789075
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__office-item">
+            <h3 class="footer__office-title">Office 2</h3>
+            <ul class="footer__office-contact-list">
+              <li class="footer__office-contact-item">
+                <img
+                  src="./images/icons/map-mark.svg"
+                  alt="map mark icon"
+                  class="footer__office-contact-icon"
+                />
+                <a
+                  href="https://www.google.com/maps/place/Pae+47-25,+11414+Tallinn,+%D0%95%D1%81%D1%82%D0%BE%D0%BD%D1%96%D1%8F/data=!4m2!3m1!1s0x4692ecaddfccdef9:0x16111e88f5b21088?sa=X&ved=2ahUKEwiZ6t6f8Of4AhVASfEDHXZnBD4Q8gF6BAgIEAE"
+                  class="footer__office-contact-link"
+                >
+                  Lasnamae linnaosa, Pae tn 25-47
+                </a>
+              </li>
+              <li class="footer__office-contact-item">
+                <img
+                  src="./images/icons/mail.svg"
+                  alt="mail icon"
+                  class="footer__office-contact-icon"
+                />
+                <a
+                  href="mailto:username@mail.com"
+                  class="footer__office-contact-link"
+                >
+                  username@mail.com
+                </a>
+              </li>
+              <li class="footer__office-contact-item">
+                <img
+                  src="./images/icons/phone.svg"
+                  alt="phone icon"
+                  class="footer__office-contact-icon"
+                />
+                <a href="tel:+3125789075" class="footer__office-contact-link">
+                  +3125789075
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__last-block">
+            <h3 class="footer__socials-title">Social</h3>
+            <ul class="footer__social-list">
+              <li class="footer__social-item">
+                <a href="#" class="footer__social-link">
+                  <img
+                    src="./images/icons/fb.svg"
+                    alt="facebook logo"
+                    class="footer__social-icon"
+                  />
+                </a>
+              </li>
+              <li class="footer__social-item">
+                <a href="#" class="footer__social-link">
+                  <img
+                    src="./images/icons/tw.svg"
+                    alt="twitter logo"
+                    class="footer__social-icon"
+                  />
+                </a>
+              </li>
+              <li class="footer__social-item">
+                <a href="#" class="footer__social-link">
+                  <img
+                    src="./images/icons/in.svg"
+                    alt="linkedin logo"
+                    class="footer__social-icon"
+                  />
+                </a>
+              </li>
+              <li class="footer__social-item">
+                <a href="#" class="footer__social-link">
+                  <img
+                    src="./images/icons/ig.svg"
+                    alt="instagram logo"
+                    class="footer__social-icon"
+                  />
+                </a>
+              </li>
+            </ul>
+            <a href="#" class="footer__policy">Privacy Policy</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <div class="backdrop">
+      <div class="modal">
+        <button class="modal__close-btn">
+          <img
+            src="./images/icons/close-black.svg"
+            alt="Close icon"
+            class="modal__close-icon"
+          />
+        </button>
+        <div class="modal__info-wrap">
+          <img
+            src="https://s3-alpha-sig.figma.com/img/0498/a5c5/b76572669caba64d91bceb6179ee5971?Expires=1658102400&Signature=FYXgLtlhAwqkYgsnEAXuK-3gFDtTDnpm7PeI2jyuNaJwlTHMI3wmp2WPBnW5dyPc9WcjqV~k~7zseAnCaEH9AW6tS8RiKUmOocEDKHc9D7XCNfJQE~lzG8WsQ6bRDIrd9m0cwxuYuZgX9yeEFpcIbWvmjv7RWbJ5bfzqPMbQBKsdiEaoOELPhplHuDcNOTKhC9tussH4m5LoFMH1bdIlPTnie1dERkAfDd52Adj7qkjUPqdnGvZREoOmz9mGFyp2hoKHIMWO38DJozar-LkNZH9cg~~nIkHUnrjcsLj42ymVpukdtNyqngqkh3HaoNp~wUxps-KawvbUbKQ~i-Xl4g__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA"
+            alt=""
+            class="modal__img"
+          />
+          <div class="modal__text-wrap">
+            <div class="modal__field">
+              <div class="modal__field-name">Name:</div>
+              <div class="modal__field-value" id="field-name">Tom Dou</div>
+            </div>
+            <div class="modal__field">
+              <div class="modal__field-name">Position:</div>
+              <div class="modal__field-value" id="field-position">
+                Front-End
+              </div>
+            </div>
+            <div class="modal__field">
+              <div class="modal__field-name">Phone:</div>
+              <div class="modal__field-value" id="field-phone">+3125789075</div>
+            </div>
+            <div class="modal__field">
+              <div class="modal__field-name">Email:</div>
+              <div class="modal__field-value" id="field-email">
+                username@mail.com
+              </div>
+            </div>
+            <ul class="modal__social-list">
+              <li class="modal__social-item">
+                <a href="#" class="modal__social-link">
+                  <img
+                    src="./images/icons/fb.svg"
+                    alt=""
+                    class="modal__social-icon"
+                  />
+                </a>
+              </li>
+              <li class="modal__social-item">
+                <a href="#" class="modal__social-link">
+                  <img
+                    src="./images/icons/ig.svg"
+                    alt=""
+                    class="modal__social-icon"
+                  />
+                </a>
+              </li>
+              <li class="modal__social-item">
+                <a href="#" class="modal__social-link">
+                  <img
+                    src="./images/icons/in.svg"
+                    alt=""
+                    class="modal__social-icon"
+                  />
+                </a>
+              </li>
+              <li class="modal__social-item">
+                <a href="#" class="modal__social-link">
+                  <img
+                    src="./images/icons/tw.svg"
+                    alt=""
+                    class="modal__social-icon"
+                  />
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="modal__text">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce nullam
+          ac sed eget. Dui in eget a tristique. Curabitur massa nec non egestas
+          nisl. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dui in
+          eget a tristique. Curabitur massa nec non egestas nisl. Lorem ipsum
+          dolor sit amet, consectetur adipiscing elit.
+        </div>
+      </div>
+    </div>
+
+    <script type="module">
+      import Swiper from "https://unpkg.com/swiper@8/swiper-bundle.esm.browser.min.js";
+
+      const swiper = new Swiper(".swiper", {
+        breakpoints: {
+          1: {
+            slidesPerView: 1.15,
+            spaceBetween: 10,
+            centeredSlides: true,
+          },
+          768: {
+            slidesPerView: 3.15,
+            spaceBetween: 20,
+            centeredSlides: false,
+          },
+        },
+        slidesPerView: 1.15,
+        spaceBetween: 10,
+        centeredSlides: true,
+        scrollbar: {
+          el: ".swiper-scrollbar",
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+    <script src="./js/main.min.js" type="module"></script>
+  </body>
+</html>

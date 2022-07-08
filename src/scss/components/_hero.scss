@@ -1,0 +1,268 @@
+.hero {
+  position: relative;
+
+  overflow: hidden;
+
+  min-height: 100vh;
+  padding-top: 24px;
+  padding-bottom: 24px;
+
+  color: #ffffff;
+
+  background-color: $dark-bg-cl;
+  background-image: url("../../images/decor/hero-bg-fill-cross.svg"),
+    url("../../images/decor/hero-bg-outline-cross.svg"),
+    url("../../images/decor/hero-bg-left-lines.svg"),
+    url("../../images/decor/hero-bg-right-lines.svg");
+  background-size: 82px, 45px, 162px, 262px;
+  background-position: 90% 40%, 20px 60%, 0 35%, 100% 65%;
+  background-repeat: no-repeat;
+
+  text-align: center;
+
+  @include for-desktop {
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+    background-size: 266px, 148px, 527px, 852px;
+    background-position: 98% 40%, 10% 85%, 0 35%, 100% 100%;
+  }
+}
+
+.hero__illustration-circle {
+  position: absolute;
+  top: 135px;
+  left: 102px;
+
+  width: 79px;
+
+  @include for-tablet {
+    top: 52px;
+    left: 411px;
+
+    width: 256px;
+  }
+}
+
+.hero__illustration-bagel {
+  position: absolute;
+  left: 50%;
+  top: 90%;
+
+  transform: translateX(-50%);
+
+  @include for-tablet {
+    top: 70%;
+  }
+}
+
+.hero__top-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-bottom: 85px;
+
+  @include for-tablet {
+    margin-bottom: 163px;
+  }
+}
+
+.hero__nav {
+  display: none;
+
+  @include for-tablet {
+    display: block;
+  }
+}
+
+.hero__nav-list {
+  @extend %list-reset;
+
+  display: flex;
+  justify-content: center;
+
+  gap: 30px;
+}
+
+.hero__nav-link {
+  color: #ffffff;
+
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 1.13;
+
+  &--underline {
+    text-decoration: underline;
+  }
+}
+
+.hero__menu-btn {
+  @extend %btn-reset;
+
+  @include for-tablet {
+    display: none;
+  }
+}
+
+.hero__content {
+  display: flex;
+  flex-direction: column;
+
+  max-width: 1268px;
+
+  border-radius: 7px;
+  padding: 56px 15px;
+  margin: 0 auto;
+
+  background: linear-gradient(
+    104.93deg,
+    rgba(122, 122, 122, 0.19) 2%,
+    rgba(122, 122, 122, 0) 105%
+  );
+  backdrop-filter: blur(20px);
+
+  @include for-tablet {
+    padding: 72px 46px;
+  }
+}
+
+.hero__mobile-menu {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  transform: translateY(-100%);
+
+  display: flex;
+  flex-direction: column;
+
+  width: 100%;
+  height: 100vh;
+
+  padding: 24px 20px;
+
+  overflow: auto;
+
+  background: linear-gradient(
+    104.93deg,
+    rgba(122, 122, 122, 0.1) 2%,
+    rgba(122, 122, 122, 0) 105%
+  );
+  backdrop-filter: blur(20px);
+
+  transition: transform 250ms ease;
+
+  &.menu-is-open {
+    transform: translateY(0);
+  }
+
+  @include for-tablet {
+    display: none;
+  }
+}
+
+.hero__mobile-menu-top-wrap {
+  @extend .hero__top-wrap;
+}
+
+.hero__mobile-nav {
+  margin-bottom: auto;
+}
+
+.hero__menu-list {
+  @extend %list-reset;
+
+  display: grid;
+
+  gap: 30px;
+}
+
+.hero__menu-item {
+  text-align-last: left;
+}
+
+.hero__menu-link {
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.17;
+
+  &--underline {
+    text-decoration: underline;
+    text-decoration-thickness: 3px;
+  }
+}
+
+.hero__mobile-menu-social-list {
+  @extend %list-reset;
+
+  display: flex;
+  justify-content: center;
+
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+.hero__mobile-menu-policy {
+  color: #b1b1b1;
+
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.13;
+}
+
+.hero__mobile-menu-social-icon {
+  width: 30px;
+  height: 30px;
+}
+
+.hero__content-title {
+  margin-bottom: 30px;
+
+  font-size: 34px;
+  font-weight: 700;
+  line-height: 1.14;
+
+  @include for-tablet {
+    font-size: 72px;
+  }
+}
+
+.hero__content-text {
+  max-width: 742px;
+
+  margin: 0 auto 40px;
+
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.25;
+
+  @include for-tablet {
+    margin-bottom: 114px;
+
+    font-size: 24px;
+  }
+}
+
+.hero__btns-wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 30px;
+
+  @include for-tablet {
+    flex-direction: row;
+    gap: 60px;
+  }
+}
+
+.hero__btn {
+  @include for-tablet {
+    width: 284px;
+  }
+}

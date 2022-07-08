@@ -1,0 +1,16 @@
+%list-reset {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+%btn-reset {
+  padding: 0;
+  border: none;
+
+  background-color: transparent;
+
+  font-family: inherit;
+
+  cursor: pointer;
+}
